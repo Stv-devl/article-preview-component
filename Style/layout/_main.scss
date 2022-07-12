@@ -1,0 +1,187 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .card {
+    width: 731px;
+    height: 280px;
+    display: grid;
+    grid-template-columns: 285px 446px;
+
+    /*media querie => change positi0on for tablette and mobile*/
+    @media screen and (max-width: 900px) {
+      width: 328px;
+      height: 513px;
+      display: grid;
+      grid-template-columns: 328px;
+      grid-template-rows: 201px 312px;
+    }
+  }
+  .card-left {
+    background: url(..//../images/drawers.jpg) center/cover;
+    border-radius: 8px 0 0 8px;
+
+    @media screen and (max-width: 900px) {
+      border-radius: 8px 8px 0 0;
+    }
+  }
+
+  .card-right {
+    background: white;
+    border-radius: 0 8px 8px 0;
+    padding: 30px;
+
+    @media screen and (max-width: 900px) {
+      padding: 20px 20px 10px 20px;
+      justify-content: space-around;
+    }
+
+    h1 {
+      font-size: 1.45rem;
+      margin: 0 0 20px 0;
+
+      @media screen and (max-width: 900px) {
+        font-size: 1.2rem;
+        margin: 20px 0 35px 0;
+      }
+    }
+
+    .bottom-card {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 14% 76% 10%;
+      justify-items: flex-start;
+      margin: 30px 0 0 0;
+
+      @media screen and (max-width: 900px) {
+        display: grid;
+        grid-template-columns: 18% 67% 15%;
+        margin: 30px 0 0 0;
+      }
+    }
+    .img2 {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    h2 {
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    span p {
+      color: $GrayishBlue;
+    }
+
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background: hsl(210, 46%, 95%);
+      border-radius: 50%;
+      z-index: 0;
+      cursor: pointer;
+
+      @media screen and (max-width: 900px) {
+        z-index: 100;
+      }
+
+      &:hover {
+        background: $VeryDarkGrayishBlue;
+      }
+
+      .img3 {
+        width: 15px;
+        height: 13px;
+        z-index: 1;
+        transition: 0.3s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+
+        @media screen and (max-width: 900px) {
+          z-index: 100;
+        }
+      }
+    }
+  }
+}
+
+.popup {
+  text-align: left;
+  cursor: pointer;
+  position: absolute;
+
+  /*media querie => change positi0on for tablette and mobile*/
+
+  .flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 248px;
+    height: 55px;
+    position: relative;
+    background: $VeryDarkGrayishBlue;
+    border-radius: 7px;
+    padding: 0 25px 0 25px;
+    top: -80px;
+
+    @media screen and (max-width: 900px) {
+      width: 328px;
+      height: 64px;
+      border-radius: 0 0 7px 7px;
+      top: 0px;
+      transform: translateX(-36.75%);
+      padding: 0 80px 0 0;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      top: 55px;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 12px solid $VeryDarkGrayishBlue;
+
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    h3 {
+      color: $GrayishBlue;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 0.7rem;
+      transition: 0.3s;
+
+      &:hover {
+        color: $LightGrayishBlue;
+        transform: scale(1.1);
+      }
+    }
+    .img4,
+    .img5,
+    .img6 {
+      width: 20px;
+      height: 20px;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
