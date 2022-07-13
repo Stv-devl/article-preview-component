@@ -84,29 +84,22 @@ main {
       height: 40px;
       background: hsl(210, 46%, 95%);
       border-radius: 50%;
-      z-index: 0;
       cursor: pointer;
-
-      @media screen and (max-width: 900px) {
-        z-index: 100;
-      }
+      transition: 0.5s;
 
       &:hover {
         background: $VeryDarkGrayishBlue;
       }
 
-      .img3 {
-        width: 15px;
-        height: 13px;
+      i {
         z-index: 1;
         transition: 0.3s;
+        color: $DesaturatedDarkBlue;
+        transform: scale(1.2);
 
         &:hover {
-          transform: scale(1.2);
-        }
-
-        @media screen and (max-width: 900px) {
-          z-index: 100;
+          transform: scale(1.4);
+          color: $LightGrayishBlue;
         }
       }
     }
@@ -118,7 +111,7 @@ main {
   cursor: pointer;
   position: absolute;
 
-  /*media querie => change positi0on for tablette and mobile*/
+  /*media querie => change position for tablette and mobile*/
 
   .flexbox {
     display: flex;

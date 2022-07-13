@@ -121,37 +121,28 @@ main .card-right .circle {
   height: 40px;
   background: hsl(210deg, 46%, 95%);
   border-radius: 50%;
-  z-index: 0;
   cursor: pointer;
-}
-@media screen and (max-width: 900px) {
-  main .card-right .circle {
-    z-index: 100;
-  }
+  transition: 0.5s;
 }
 main .card-right .circle:hover {
   background: hsl(217deg, 19%, 35%);
 }
-main .card-right .circle .img3 {
-  width: 15px;
-  height: 13px;
+main .card-right .circle i {
   z-index: 1;
   transition: 0.3s;
-}
-main .card-right .circle .img3:hover {
+  color: hsl(214deg, 17%, 51%);
   transform: scale(1.2);
 }
-@media screen and (max-width: 900px) {
-  main .card-right .circle .img3 {
-    z-index: 100;
-  }
+main .card-right .circle i:hover {
+  transform: scale(1.4);
+  color: hsl(210deg, 46%, 95%);
 }
 
 .popup {
   text-align: left;
   cursor: pointer;
   position: absolute;
-  /*media querie => change positi0on for tablette and mobile*/
+  /*media querie => change position for tablette and mobile*/
 }
 .popup .flexbox {
   display: flex;
