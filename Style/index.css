@@ -35,18 +35,25 @@ a:visited {
   color: hsl(214deg, 17%, 51%);
 }
 
+/**********************************************************************/
+/*Main*/
+/**********************************************************************/
+/*flex on main for center elements in page*/
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  /*card size and grid 2 columns*/
+  /*add img and border radius*/
+  /*background and padding */
 }
 main .card {
   width: 731px;
   height: 280px;
   display: grid;
   grid-template-columns: 285px 446px;
-  /*media querie => change positi0on for tablette and mobile*/
+  /*media querie => change grid and size for tablette and mobile*/
 }
 @media screen and (max-width: 900px) {
   main .card {
@@ -60,6 +67,7 @@ main .card {
 main .card-left {
   background: url(..//../images/drawers.jpg) center/cover;
   border-radius: 8px 0 0 8px;
+  /*media querie => change border-radius for tablette and mobile*/
 }
 @media screen and (max-width: 900px) {
   main .card-left {
@@ -70,6 +78,12 @@ main .card-right {
   background: white;
   border-radius: 0 8px 8px 0;
   padding: 30px;
+  /*media querie => change padding and flex*/
+  /*txt size and margin*/
+  /*grid  3 columns*/
+  /*set img size and radius*/
+  /*set txt size and letter spacing*/
+  /*set grey circle*/
 }
 @media screen and (max-width: 900px) {
   main .card-right {
@@ -80,6 +94,7 @@ main .card-right {
 main .card-right h1 {
   font-size: 1.45rem;
   margin: 0 0 20px 0;
+  /*media querie => change size and margin*/
 }
 @media screen and (max-width: 900px) {
   main .card-right h1 {
@@ -93,6 +108,7 @@ main .card-right .bottom-card {
   grid-template-columns: 14% 76% 10%;
   justify-items: flex-start;
   margin: 30px 0 0 0;
+  /*media querie => change grid*/
 }
 @media screen and (max-width: 900px) {
   main .card-right .bottom-card {
@@ -123,6 +139,7 @@ main .card-right .circle {
   border-radius: 50%;
   cursor: pointer;
   transition: 0.5s;
+  /*set bottom share*/
 }
 main .card-right .circle:hover {
   background: hsl(217deg, 19%, 35%);
@@ -138,11 +155,13 @@ main .card-right .circle i:hover {
   color: hsl(210deg, 46%, 95%);
 }
 
+/*set popup*/
 .popup {
   text-align: left;
   cursor: pointer;
   position: absolute;
-  /*media querie => change position for tablette and mobile*/
+  z-index: 0;
+  /*flexbox for aligne elements*/
 }
 .popup .flexbox {
   display: flex;
@@ -156,6 +175,9 @@ main .card-right .circle i:hover {
   border-radius: 7px;
   padding: 0 25px 0 25px;
   top: -80px;
+  /*after for do a triangle*/
+  /*set txt*/
+  /*set img*/
 }
 @media screen and (max-width: 900px) {
   .popup .flexbox {
@@ -206,6 +228,7 @@ main .card-right .circle i:hover {
   transform: scale(1.1);
 }
 
+/*for hide or not the popup => with javascipt */
 .hide {
   display: none;
 }
