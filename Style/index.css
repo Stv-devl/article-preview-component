@@ -89,6 +89,7 @@ main .card-right {
   main .card-right {
     padding: 20px 20px 10px 20px;
     justify-content: space-around;
+    border-radius: 0 0 8px 8px;
   }
 }
 main .card-right h1 {
