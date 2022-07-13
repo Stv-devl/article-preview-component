@@ -127,7 +127,7 @@ main .card-right h2 {
   font-size: 0.9rem;
   letter-spacing: 0.5px;
 }
-main .card-right span p {
+main .card-right .txt1 p {
   color: hsl(212deg, 23%, 69%);
 }
 main .card-right .circle {
