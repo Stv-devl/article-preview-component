@@ -58,7 +58,7 @@ Javascipt : working with a toggle
 
 ### What I learned
 
-I learned to use simple Javascipt, in this exercice I used the toggle for diplay or not the popup.
+I learned to use simple Javascipt, in this exercice I used the toggle for display or not the popup.
 
 ### Continued development
 
